@@ -1,0 +1,7 @@
+:root { font-family:'Noto Serif SC','Songti SC','SimSun',ui-serif,Georgia,"Microsoft YaHei",serif; color:#efe8d8; background:#0d0e12; font-synthesis:none; text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased; }
+* { box-sizing:border-box; }
+html { min-width:320px; background:#0d0e12; }
+body { margin:0; min-width:320px; min-height:100vh; }
+button { font:inherit; }
+button:focus-visible { outline:3px solid #e8b75c; outline-offset:3px; }
+::selection { background:#e8b75c; color:#1a1206; }

@@ -1,0 +1,28 @@
+import type { ClassProfile } from '../types'
+
+// 门派色沿用「真·武学助手」的门派配色；苍云原色过暗，在深色底上提亮为玄铁灰蓝。
+// versatility：可切换的玩法跨度（职责数量、内外功双修），1～3。
+export const classProfiles: ClassProfile[] = [
+  { name:'纯阳', key:'chunyang', color:'#3e92cc', weapon:'剑', bodies:'四体型', versatility:2, intro:'纯阳宫是华山上的道门，弟子御剑修道，以太极气场闻名。', identity:'两种心法都是输出：紫霞功是中距离的内功气场法修，太虚剑意是贴身的外功剑客；同一个角色就能体验内外两种截然不同的打法。', strengths:'道袍飘逸、轻功好看，气场既能强化自己也能照顾队友，内外双修给了很大的转型空间。', weaknesses:'两个心法都只能输出，不能坦也不能奶；气场要算好位置，站位意识差时收益会大打折扣。' },
+  { name:'万花', key:'wanhua', color:'#b57edc', weapon:'笔', bodies:'四体型', versatility:3, intro:'万花谷是隐世的文人门派，琴棋书画医样样精通，以一支笔点穴伤人。', identity:'花间游是远程内功输出，靠持续伤害与点穴控制打人；离经易道是治疗，擅长把单个队友从残血拉回。', strengths:'书生气质独一份，控制和点穴手段丰富，输出与治疗两条路都很成熟。', weaknesses:'身板偏脆，被近身后很吃自保技能的时机；两个心法都需要一定时间才能熟练。' },
+  { name:'少林', key:'shaolin', color:'#c8922e', weapon:'棍', bodies:'仅成男 · 正太', versatility:3, intro:'少林寺是天下武学之源的佛门，只收男弟子，以棍法与禅功护法。', identity:'易筋经是贴身的内功输出，洗髓经是防御坦克；佛光金色的招式与光头造型是它最鲜明的标志。', strengths:'身板结实、招式直观，防御心法稳定可靠，是想当坦克又怕太难时的好选择。', weaknesses:'只能创建男性角色；造型以光头僧袍为主，外观选择面比其他门派窄。' },
+  { name:'七秀', key:'qixiu', color:'#ec7fa9', weapon:'双剑', bodies:'仅成女 · 萝莉', versatility:3, intro:'七秀坊是扬州的女子门派，以剑舞入武，舞姿与剑法合一。', identity:'冰心诀是中近距离的内功输出，靠剑舞层数爆发；云裳心经是治疗，以舞步照料全队。', strengths:'双剑剑舞是全游戏最华丽的动作之一，治疗心法被需求度高，好组队。', weaknesses:'只能创建女性角色；输出心法身板一般，爆发节奏打乱后损失明显。' },
+  { name:'天策', key:'tiance', color:'#cc3d38', weapon:'长枪', bodies:'四体型', versatility:3, intro:'天策府是大唐的禁军府兵，枪马纵横，是最纯粹的军旅门派。', identity:'傲血战意是骑在马上冲杀的外功输出，铁牢律是持枪守阵的防御坦克。', strengths:'骑马作战的冲阵感无可替代，坦克心法扎实，红黑军装辨识度很高。', weaknesses:'输出心法下马就要受限，地形复杂时需要照顾坐骑；机制站位要求不低。' },
+  { name:'藏剑', key:'cangjian', color:'#e0b12c', weapon:'轻剑 + 重剑', bodies:'四体型', versatility:1, intro:'藏剑山庄是西湖边的铸剑世家，弟子一轻一重两把剑随身，富贵又潇洒。', identity:'藏剑只有一个外功输出方向，问水诀（轻剑）与山居剑意（重剑）在战斗中来回切换，构成一整套循环。', strengths:'金黄配色富丽堂皇，大风车等群攻手感爽快，轻重剑切换让战斗很有层次。', weaknesses:'只能输出；轻重剑两套技能都要熟，初学时键位会显得比较多。' },
+  { name:'五毒', key:'wudu', color:'#7a3fb0', weapon:'笛', bodies:'四体型', versatility:3, intro:'五毒教来自苗疆，驱蛊御虫、以笛声操纵毒物，神秘又危险。', identity:'毒经是远程内功输出，带着蛊宠铺满持续伤害；补天诀是治疗，同样有宠物相伴。', strengths:'苗疆服饰和银饰独具异域风情，蛊宠陪伴感强，两个心法都相对好上手。', weaknesses:'持续伤害需要时间铺开，短战斗吃亏；宠物站位与指令偶尔需要照看。' },
+  { name:'唐门', key:'tangmen', color:'#3457b5', weapon:'千机匣', bodies:'四体型', versatility:2, intro:'唐门是蜀中的暗器世家，以千机匣和机关术闻名，擅长远距离狙杀。', identity:'惊羽诀是外功远程狙击手，天罗诡道是摆放机关的内功远程输出；两个心法都是输出。', strengths:'射程远、刺客气质浓，内外双修，机关与暗器的玩法差异大。', weaknesses:'都只能输出；关键招式有读条或引导，被打断和被贴身时比较难受。' },
+  { name:'明教', key:'mingjiao', color:'#e2792c', weapon:'双弯刀', bodies:'四体型', versatility:3, intro:'明教源自波斯，信奉光明，弟子持双弯刀在日月之力间切换。', identity:'焚影圣诀是贴身的内功输出，积攒日月灵力后爆发；明尊琉璃体是防御坦克。', strengths:'异域服饰与隐身突袭很有辨识度，爆发瞬间的日月特效非常华丽。', weaknesses:'日月资源需要规划，打乱顺序会损失大量伤害；输出心法贴身作战，躲机制时容易断节奏。' },
+  { name:'丐帮', key:'gaibang', color:'#a87145', weapon:'棒 + 酒壶', bodies:'四体型', versatility:1, intro:'丐帮是天下第一大帮，豪饮烈酒、降龙掌法，侠气与江湖气最重。', identity:'笑尘诀是唯一心法，贴身外功输出，掌法与棒法交替，酒意越浓越能打。', strengths:'降龙掌法的金龙特效很爽，机动和追击手段多，打法豪放直接。', weaknesses:'只能输出；酒与掌棒的节奏需要适应，造型偏粗犷，不是所有人都喜欢。' },
+  { name:'苍云', key:'cangyun', color:'#8792a8', weapon:'刀 + 盾', bodies:'四体型', versatility:3, intro:'苍云军镇守雁门关，刀盾在手，是戍边的铁血军人。', identity:'分山劲是用怒气驱动的外功近战输出，铁骨衣是全游戏最硬的防御坦克之一。', strengths:'刀盾轮廓厚重，身板结实，输出心法也有不错的自保，容错很高。', weaknesses:'整体色调偏暗、风格硬朗；怒气管理与盾牌技能需要一段时间理解。' },
+  { name:'长歌', key:'changge', color:'#1fae9c', weapon:'琴', bodies:'四体型', versatility:3, intro:'长歌门是书香世家，弟子以琴为武，曲声既能杀敌也能疗伤。', identity:'莫问是远程内功输出，以曲调与影子位移作战；相知是治疗，擅长群体回复与护盾。', strengths:'抚琴姿态优雅，远程移动灵活，治疗心法群疗出色。', weaknesses:'输出心法多靠持续伤害与读条，被贴身时需要影子位移脱身；两种曲调的切换要花时间熟悉。' },
+  { name:'霸刀', key:'badao', color:'#6a47e0', weapon:'傲霜刀', bodies:'四体型', versatility:1, intro:'霸刀山庄是北地世家，扛一柄大刀，三种刀势随战况切换。', identity:'北傲诀是唯一心法，贴身外功输出，在不同刀式之间切换出招，招式凶狠。', strengths:'大刀劈砍的打击感非常重，刀式切换让操作上限很高，世家公子造型帅气。', weaknesses:'只能输出；三套刀式都要掌握，是入门难度较高的近战。' },
+  { name:'蓬莱', key:'penglai', color:'#28b7d6', weapon:'伞', bodies:'四体型', versatility:1, intro:'蓬莱是海外仙岛，弟子执伞御风，还有一只海雕伙伴。', identity:'凌海诀是唯一心法，外功近战，可以飞上天空作战再落地，海雕独立出招。', strengths:'浮空作战独一份，校服精致、伞的动作好看，海雕陪伴感强。', weaknesses:'上天与落地的时机很讲究，团队副本里站位受限，是最难上手的心法之一。' },
+  { name:'凌雪阁', key:'lingxue', color:'#c01a2e', weapon:'链刃', bodies:'四体型', versatility:1, intro:'凌雪阁是朝廷暗中的刺客组织，以可伸缩的链刃取人性命。', identity:'隐龙诀是唯一心法，外功近战输出，能窃取对手的增益为己所用。', strengths:'刺客气质浓，控制强，链刃中近距离收放的动作很独特。', weaknesses:'只能输出；减伤手段有限，攻击距离需要精确把握，技能多且杂。' },
+  { name:'衍天宗', key:'yantian', color:'#7a5bd0', weapon:'魂灯', bodies:'四体型', versatility:1, intro:'衍天宗观星演卦、通晓阴阳术，手提魂灯，神秘莫测。', identity:'太玄经是唯一心法，远程内功输出，以符阵与奇门术数作战。', strengths:'星象与阴阳术主题独特，魂灯法器造型亮眼，远程爆发有章法。', weaknesses:'只能输出；术数机制抽象，需要一段时间理解其中的节奏。' },
+  { name:'药宗', key:'yaozong', color:'#5ac795', weapon:'百草卷', bodies:'四体型', versatility:3, intro:'北天药宗以医药立派，弟子手持百草卷，药性分寒温。', identity:'无方是远程内功输出，按寒温交替的节奏出招；灵素是治疗，群体治疗量出众。', strengths:'医者主题清新，两个心法都有需求，群疗能力非常强，好找队伍。', weaknesses:'寒温节奏是入门的门槛，交替顺序乱了就会明显掉输出。' },
+  { name:'刀宗', key:'daozong', color:'#4e9bc4', weapon:'唐横刀', bodies:'四体型', versatility:1, intro:'刀宗是剑魔谢云流创立的门派，持唐横刀，拔刀即决胜负。', identity:'孤锋诀是唯一心法，贴身外功输出，围绕拔刀与收刀的节奏打出爆发。', strengths:'居合拔刀的动作干净利落，爆发窗口清晰，浪客气质很帅。', weaknesses:'只能输出；团队功能较少，节奏断了之后重新蓄势需要时间。' },
+  { name:'万灵', key:'wanling', color:'#f2c81f', weapon:'弓', bodies:'四体型', versatility:1, intro:'万灵山庄信奉万物有灵，弟子善射，与神兽乘黄和百兽并肩作战。', identity:'山海心诀是唯一心法，远程外功输出，射术、装填与召唤兽三套招式配合使用。', strengths:'弓箭手与驭兽师合一，远程移动输出舒服，神兽伙伴很有陪伴感。', weaknesses:'只能输出；三套招式相对独立，要同时照顾箭矢和兽群。' },
+  { name:'段氏', key:'duanshi', color:'#bfc6ce', weapon:'折扇', bodies:'四体型', versatility:1, intro:'段氏是大理的皇族世家，修习周天功，一阳指与折扇并用。', identity:'周天功是唯一心法，远程内功输出，兼具控制场面的风、雾招式。', strengths:'大理皇族的贵气与折扇造型很特别，控场、爆发和距离掌控都不错。', weaknesses:'只能输出；指法、步法、风雾几套招式要一起理解，初期信息量较大。' },
+]
+
+export const classProfileMap = new Map(classProfiles.map((profile) => [profile.name, profile]))
